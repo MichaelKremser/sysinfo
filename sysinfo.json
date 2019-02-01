@@ -1,0 +1,26 @@
+{
+    "index": {
+        "uptime": {
+            "command": "uptime"
+        }
+        , "memory": {
+            "command": "free -h"
+        }
+        , "disks": {
+            "command": "df -h -t ext4"
+        }
+    },
+    "netstat": {
+        "open": {
+            "xcommand": "netstat -tp | grep -v TIME"
+        },
+        "servers": {
+            "xcommand": "netstat -tpl"
+        }
+    },
+    "lxc": {
+        "list": {
+            "xcommand": "lxc-ls --fancy"
+        }
+    }
+}
